@@ -1,0 +1,32 @@
+[
+  {
+      "productoId": 1,
+      "productoNombre": "Frijol",
+      "descripcion": "Frijol Rojo",
+      "precio": 3
+    },
+    {
+      "productoId": 2,
+      "productoNombre": "Arroz",
+      "descripcion": "Arroz Precocido",
+      "precio": 2.5
+    },
+    {
+      "productoId": 3,
+      "productoNombre": "Azucar",
+      "descripcion": "Azucar morena",
+      "precio": 1.5
+    },
+    {
+      "productoId": 4,
+      "productoNombre": "Maiz",
+      "descripcion": "Maiz para tortilla",
+      "precio": 2.0
+    },
+    {
+      "productoId": 5,
+      "productoNombre": "Cal",
+      "descripcion": "Cal para",
+      "precio": 1.0
+    }
+]
