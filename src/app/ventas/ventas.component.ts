@@ -87,5 +87,14 @@ export class VentasComponent implements OnInit {
 
   }
 
+  calcularTotalProducto():void{
+
+    if(this.precioElegido != null){
+      let totalPedidoAgregado =(this.precioElegido*this.cantidad).toFixed(2);
+    this.totalPedido = parseFloat(totalPedidoAgregado);
+    }
+    
+  }
+
 
 }
