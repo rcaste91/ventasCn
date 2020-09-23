@@ -1,5 +1,7 @@
 <div class="container">
-    <h1>Control de Productos y Precios</h1>
+    <p></p>
+    <h1 class="display-3">Control de Productos y Precios</h1>
+    <p></p>
 </div>
 
 <form>
@@ -35,18 +37,12 @@
         </table>
 
         <div class="form-row form-group">
-            <div class="col-md-1">
-                <button class="btn btn-primary" (click)="addProducto()"  name="Agregar">Agregar</button>
-            </div>
-            <div class="col-md-1" *ngIf="showBoton">
-                <button class="btn btn-primary" (click)="updateProducto(productoElegido)" name="Modificar"  >Modificar</button>
-            </div>
-            <div class="col-md-1" *ngIf="showBoton">
-                <button class="btn btn-danger" name="Eliminar" (click)="deleteProducto(productoElegido)">Eliminar</button>
-            </div>
-            <div class="col-md-1">
-                <button class="btn btn-primary" name="Cancelar" (click)="cancelarOp()">Cancelar</button>
-            </div>
+            
+                <button class="btn btn-primary card-link" (click)="addProducto()" *ngIf="!showBoton"  name="Agregar">Agregar</button>
+                <button class="btn btn-primary card-link" *ngIf="showBoton" (click)="updateProducto(productoElegido)" name="Modificar"  >Modificar</button>
+                <button class="btn btn-danger card-link"  *ngIf="showBoton" name="Eliminar" (click)="deleteProducto(productoElegido)">Eliminar</button>
+                <button class="btn btn-primary card-link" name="Cancelar" (click)="cancelarOp()">Cancelar</button>
+            
         </div>
 
         <div class="alert alert-primary" role="alert" *ngIf="showMsjOperacion">
@@ -57,7 +53,7 @@
     <div class="form-row form-group" > 
         <div class="col-sm-4" style="padding-bottom: 10px;" name="productos" *ngFor='let p of items'>
             <div class="card">
-                <img class="card-img-top" src="..." alt="Card image">
+                <img class="card-img-top" src="assets/images/cnelly.png" alt="Card image">
                 <div class="card-body">
                     <h5 class="card-title">{{p.payload.doc.data().productoNombre}}</h5>
                     <p class="card-text">{{p.payload.doc.data().descripcion}}</p>

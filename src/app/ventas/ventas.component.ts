@@ -48,7 +48,8 @@ export class VentasComponent implements OnInit {
     this.prodElegido=productoElegido;
     this.precioElegido=precElegido;
     this.cantidad=1;
-    this.totalPedido=0;
+    //this.totalPedido=0;
+    this.calcularTotalProducto();
   }
 
   resetProducto():void{
